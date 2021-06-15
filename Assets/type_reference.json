@@ -1,0 +1,2746 @@
+[
+    {
+      "CategoryID": "crystalline",
+      "Name": "Quartz",
+      "TechType": "Quartz",
+      "Value": 1,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "metals",
+      "Name": "Metal Salvage",
+      "TechType": "ScrapMetal",
+      "Value": 2,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "metals",
+      "Name": "Copper Ore",
+      "TechType": "Copper",
+      "Value": 7,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "metals",
+      "Name": "Lead",
+      "TechType": "Lead",
+      "Value": 8,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "crystalline",
+      "Name": "Salt Deposit",
+      "TechType": "Salt",
+      "Value": 9,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "synthetics",
+      "Name": "Glass",
+      "TechType": "Glass",
+      "Value": 15,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "metals",
+      "Name": "Titanium",
+      "TechType": "Titanium",
+      "Value": 16,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "synthetics",
+      "Name": "Silicone Rubber",
+      "TechType": "Silicone",
+      "Value": 17,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "metals",
+      "Name": "Gold",
+      "TechType": "Gold",
+      "Value": 21,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "crystalline",
+      "Name": "Crystalline Sulfur",
+      "TechType": "Sulfur",
+      "Value": 23,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "synthetics",
+      "Name": "Bleach",
+      "TechType": "Bleach",
+      "Value": 27,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "metals",
+      "Name": "Silver Ore",
+      "TechType": "Silver",
+      "Value": 28,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "metals",
+      "Name": "Titanium Ingot",
+      "TechType": "TitaniumIngot",
+      "Value": 30,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "electronics",
+      "Name": "Copper Wire",
+      "TechType": "CopperWire",
+      "Value": 32,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "electronics",
+      "Name": "Wiring Kit",
+      "TechType": "WiringKit",
+      "Value": 33,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "electronics",
+      "Name": "Advanced Wiring Kit",
+      "TechType": "AdvancedWiringKit",
+      "Value": 34,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "natural",
+      "Name": "Cave Sulfur",
+      "TechType": "CrashPowder",
+      "Value": 35,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "crystalline",
+      "Name": "Diamond",
+      "TechType": "Diamond",
+      "Value": 36,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "metals",
+      "Name": "Lithium",
+      "TechType": "Lithium",
+      "Value": 40,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "metals",
+      "Name": "Plasteel Ingot",
+      "TechType": "PlasteelIngot",
+      "Value": 41,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "synthetics",
+      "Name": "Enameled Glass",
+      "TechType": "EnameledGlass",
+      "Value": 42,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "batteries",
+      "Name": "Power Cell",
+      "TechType": "PowerCell",
+      "Value": 43,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "electronics",
+      "Name": "Computer Chip",
+      "TechType": "ComputerChip",
+      "Value": 44,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "synthetics",
+      "Name": "Fiber Mesh",
+      "TechType": "Fiber",
+      "Value": 45,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "crystalline",
+      "Name": "Ruby",
+      "TechType": "AluminumOxide",
+      "Value": 52,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "synthetics",
+      "Name": "Hydrochloric Acid",
+      "TechType": "HydroChloricAcid",
+      "Value": 53,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "metals",
+      "Name": "Magnetite",
+      "TechType": "Magnetite",
+      "Value": 54,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "synthetics",
+      "Name": "Polyaniline",
+      "TechType": "Polyaniline",
+      "Value": 56,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "synthetics",
+      "Name": "Synthetic Fibers",
+      "TechType": "AramidFibers",
+      "Value": 57,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "synthetics",
+      "Name": "Aerogel",
+      "TechType": "Aerogel",
+      "Value": 59,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "synthetics",
+      "Name": "Benzene",
+      "TechType": "Benzene",
+      "Value": 61,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "synthetics",
+      "Name": "Lubricant",
+      "TechType": "Lubricant",
+      "Value": 62,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "crystalline",
+      "Name": "Uraninite Crystal",
+      "TechType": "UraniniteCrystal",
+      "Value": 63,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "electronics",
+      "Name": "Reactor Rod",
+      "TechType": "ReactorRod",
+      "Value": 64,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "electronics",
+      "Name": "Depleted Reactor Rod",
+      "TechType": "DepletedReactorRod",
+      "Value": 65,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "crystalline",
+      "Name": "Ion Cube",
+      "TechType": "PrecursorIonCrystal",
+      "Value": 66,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "crystalline",
+      "Name": "Kyanite",
+      "TechType": "Kyanite",
+      "Value": 68,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "metals",
+      "Name": "Nickel Ore",
+      "TechType": "Nickel",
+      "Value": 69,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "equipment",
+      "Name": "Dive Suit",
+      "TechType": "DiveSuit",
+      "Value": 500,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "equipment",
+      "Name": "Fins",
+      "TechType": "Fins",
+      "Value": 502,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "equipment",
+      "Name": "Standard O₂ Tank",
+      "TechType": "Tank",
+      "Value": 503,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "batteries",
+      "Name": "Battery",
+      "TechType": "Battery",
+      "Value": 504,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "tools",
+      "Name": "Survival Knife",
+      "TechType": "Knife",
+      "Value": 505,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "tools",
+      "Name": "Drill",
+      "TechType": "Drill",
+      "Value": 506,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "tools",
+      "Name": "Flashlight",
+      "TechType": "Flashlight",
+      "Value": 507,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "tools",
+      "Name": "Beacon",
+      "TechType": "Beacon",
+      "Value": 508,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "tools",
+      "Name": "Habitat Builder",
+      "TechType": "Builder",
+      "Value": 509,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "tools",
+      "Name": "Air Bladder",
+      "TechType": "AirBladder",
+      "Value": 513,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "tools",
+      "Name": "Terraformer",
+      "TechType": "Terraformer",
+      "Value": 514,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "equipment",
+      "Name": "Pipe",
+      "TechType": "Pipe",
+      "Value": 515,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "tools",
+      "Name": "Pathfinder Tool",
+      "TechType": "DiveReel",
+      "Value": 517,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "equipment",
+      "Name": "Rebreather",
+      "TechType": "Rebreather",
+      "Value": 518,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "equipment",
+      "Name": "Radiation Suit",
+      "TechType": "RadiationSuit",
+      "Value": 519,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "equipment",
+      "Name": "Radiation Helmet",
+      "TechType": "RadiationHelmet",
+      "Value": 520,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "equipment",
+      "Name": "Radiation Gloves",
+      "TechType": "RadiationGloves",
+      "Value": 521,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "equipment",
+      "Name": "Reinforced Dive Suit",
+      "TechType": "ReinforcedDiveSuit",
+      "Value": 522,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "tools",
+      "Name": "Scanner",
+      "TechType": "Scanner",
+      "Value": 523,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "tools",
+      "Name": "Fire Extinguisher",
+      "TechType": "FireExtinguisher",
+      "Value": 524,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "baseupgrades",
+      "Name": "Scanner Room HUD Chip",
+      "TechType": "MapRoomHUDChip",
+      "Value": 525,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "torpedoes",
+      "Name": "Creature Decoy",
+      "TechType": "CyclopsDecoy",
+      "Value": 527,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "equipment",
+      "Name": "High Capacity O₂ Tank",
+      "TechType": "DoubleTank",
+      "Value": 528,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "equipment",
+      "Name": "Reinforced Gloves",
+      "TechType": "ReinforcedGloves",
+      "Value": 529,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "tools",
+      "Name": "Thumper",
+      "TechType": "Thumper",
+      "Value": 530,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "tools",
+      "Name": "Precursor Tether",
+      "TechType": "TeleportationTool",
+      "Value": 531,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "tools",
+      "Name": "Metal Detector",
+      "TechType": "MetalDetector",
+      "Value": 532,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "tools",
+      "Name": "Headlamp",
+      "TechType": "FlashLightHelmet",
+      "Value": 533,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "tools",
+      "Name": "Repair Tool",
+      "TechType": "Welder",
+      "Value": 750,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "tools",
+      "Name": "Seaglide",
+      "TechType": "Seaglide",
+      "Value": 751,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "tools",
+      "Name": "Mobile Vehicle Bay ",
+      "TechType": "Constructor",
+      "Value": 752,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "tools",
+      "Name": "Flare",
+      "TechType": "Flare",
+      "Value": 754,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "tools",
+      "Name": "Stasis Rifle",
+      "TechType": "StasisRifle",
+      "Value": 755,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "tools",
+      "Name": "Propulsion Cannon",
+      "TechType": "PropulsionCannon",
+      "Value": 757,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "tools",
+      "Name": "Grav Trap",
+      "TechType": "Gravsphere",
+      "Value": 758,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "tools",
+      "Name": "Waterproof Locker",
+      "TechType": "SmallStorage",
+      "Value": 759,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "tools",
+      "Name": "Laser Cutter",
+      "TechType": "LaserCutter",
+      "Value": 761,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "tools",
+      "Name": "Light Stick",
+      "TechType": "LEDLight",
+      "Value": 762,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "tools",
+      "Name": "Thermoblade",
+      "TechType": "HeatBlade",
+      "Value": 801,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "equipment",
+      "Name": "Lightweight High Capacity Tank",
+      "TechType": "PlasteelTank",
+      "Value": 803,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "equipment",
+      "Name": "Ultra High Capacity Tank",
+      "TechType": "HighCapacityTank",
+      "Value": 804,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "equipment",
+      "Name": " Ultra Glide Fins",
+      "TechType": "UltraGlideFins",
+      "Value": 805,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "equipment",
+      "Name": "Swim Charge Fins",
+      "TechType": "SwimChargeFins",
+      "Value": 806,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "tools",
+      "Name": "Repulsion Cannon",
+      "TechType": "RepulsionCannon",
+      "Value": 807,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "equipment",
+      "Name": "Stillsuit",
+      "TechType": "Stillsuit",
+      "Value": 808,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "equipment",
+      "Name": "Cold Suit",
+      "TechType": "ColdSuit",
+      "Value": 810,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "equipment",
+      "Name": "Cold Suit Gloves",
+      "TechType": "ColdSuitGloves",
+      "Value": 811,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "equipment",
+      "Name": "Cold Suit Helmet",
+      "TechType": "ColdSuitHelmet",
+      "Value": 812,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "equipment",
+      "Name": "Booster Tank",
+      "TechType": "SuitBoosterTank",
+      "Value": 813,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "eggs",
+      "Name": "Safe Shallows Egg",
+      "TechType": "SafeShallowsEgg",
+      "Value": 1250,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "eggs",
+      "Name": "Kelp Forest Egg",
+      "TechType": "KelpForestEgg",
+      "Value": 1251,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "eggs",
+      "Name": "Grassy Plateaus Egg",
+      "TechType": "GrassyPlateausEgg",
+      "Value": 1252,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "eggs",
+      "Name": "Grand Reefs Egg",
+      "TechType": "GrandReefsEgg",
+      "Value": 1253,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "eggs",
+      "Name": "Mushroom Forest Egg",
+      "TechType": "MushroomForestEgg",
+      "Value": 1254,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "eggs",
+      "Name": "Bulb Zone Egg ",
+      "TechType": "KooshZoneEgg",
+      "Value": 1255,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "eggs",
+      "Name": "Twisty Bridges Egg",
+      "TechType": "TwistyBridgesEgg",
+      "Value": 1256,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "eggs",
+      "Name": "Identified Lava Lizard Egg",
+      "TechType": "LavaZoneEgg",
+      "Value": 1257,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "eggs",
+      "Name": "Stalker Egg",
+      "TechType": "StalkerEgg",
+      "Value": 1258,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "eggs",
+      "Name": "Reefback Leviathan Egg",
+      "TechType": "ReefbackEgg",
+      "Value": 1259,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "eggs",
+      "Name": "Spadefish Egg",
+      "TechType": "SpadefishEgg",
+      "Value": 1260,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "eggs",
+      "Name": "Rabbit Ray Egg",
+      "TechType": "RabbitrayEgg",
+      "Value": 1261,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "eggs",
+      "Name": "Mesmer Egg",
+      "TechType": "MesmerEgg",
+      "Value": 1262,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "eggs",
+      "Name": "Jumper Egg Undiscovered",
+      "TechType": "JumperEgg",
+      "Value": 1263,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "eggs",
+      "Name": "Sand Shark Egg",
+      "TechType": "SandsharkEgg",
+      "Value": 1264,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "eggs",
+      "Name": "Jellyray Egg",
+      "TechType": "JellyrayEgg",
+      "Value": 1265,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "eggs",
+      "Name": "Boneshark Egg Undiscovered",
+      "TechType": "BonesharkEgg",
+      "Value": 1266,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "eggs",
+      "Name": "Crabsnake Egg",
+      "TechType": "CrabsnakeEgg",
+      "Value": 1267,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "eggs",
+      "Name": "Ampeel Egg",
+      "TechType": "ShockerEgg",
+      "Value": 1268,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "eggs",
+      "Name": "Gasopod Egg",
+      "TechType": "GasopodEgg",
+      "Value": 1269,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "eggs",
+      "Name": "Generic Egg",
+      "TechType": "GenericEgg",
+      "Value": 1280,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "eggs",
+      "Name": "Crashfish Egg",
+      "TechType": "CrashEgg",
+      "Value": 1281,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "eggs",
+      "Name": "Crabsquid Egg",
+      "TechType": "CrabsquidEgg",
+      "Value": 1283,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "eggs",
+      "Name": "Cutefish Egg",
+      "TechType": "CutefishEgg",
+      "Value": 1285,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "eggs",
+      "Name": "LavaLizard Egg",
+      "TechType": "LavalizardEgg",
+      "Value": 1287,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "eggs",
+      "Name": "Sea Monkey Egg",
+      "TechType": "SeamonkeyEgg",
+      "Value": 1291,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "eggs",
+      "Name": "Arctic Ray Egg ",
+      "TechType": "ArcticrayEgg",
+      "Value": 1292,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "eggs",
+      "Name": "Brute Shark Egg",
+      "TechType": "BrutesharkEgg",
+      "Value": 1294,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "eggs",
+      "Name": "Lily Paddler Egg",
+      "TechType": "LilyPaddlerEgg",
+      "Value": 1296,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "eggs",
+      "Name": "Pinnacarid Egg",
+      "TechType": "pinnacaridEgg",
+      "Value": 1298,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "eggs",
+      "Name": "Squidshark Egg",
+      "TechType": "SquidsharkEgg",
+      "Value": 1310,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "eggs",
+      "Name": "Titan Holefish Egg",
+      "TechType": "TitanHolefishEgg",
+      "Value": 1312,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "eggs",
+      "Name": "Trivalve Egg Blue",
+      "TechType": "TrivalveBlueEgg",
+      "Value": 1314,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "eggs",
+      "Name": "Trivalve Egg Gold",
+      "TechType": "TrivalveYellowEgg",
+      "Value": 1315,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "eggs",
+      "Name": "Brinewing Egg",
+      "TechType": "BrinewingEgg",
+      "Value": 1318,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "eggs",
+      "Name": "Cryptosuchus Egg",
+      "TechType": "CryptosuchusEgg",
+      "Value": 1320,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "eggs",
+      "Name": "Glow Whale Egg",
+      "TechType": "GlowWhaleEgg",
+      "Value": 1322,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "eggs",
+      "Name": "Jellyfish Egg",
+      "TechType": "JellyfishEgg",
+      "Value": 1324,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "eggs",
+      "Name": "Pengwing Egg",
+      "TechType": "PenguinEgg",
+      "Value": 1326,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "eggs",
+      "Name": "Rock Puncher Egg",
+      "TechType": "RockPuncherEgg",
+      "Value": 1328,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "vehicleupgrades",
+      "Name": "Cyclops Pressure Compensator",
+      "TechType": "HullRreinforcementModule",
+      "Value": 1501,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "vehicleupgrades",
+      "Name": "Base Cyclops Rreinforcement Module",
+      "TechType": "HullRreinforcementModule2",
+      "Value": 1514,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "vehicleupgrades",
+      "Name": "Chelonian Hull Rreinforcement Module",
+      "TechType": "HullRreinforcementModule3",
+      "Value": 1515,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "vehicleupgrades",
+      "Name": "Cyclops Engine Efficiency Module",
+      "TechType": "PowerUpgradeModule",
+      "Value": 1516,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "decorations",
+      "Name": "Picture Frame",
+      "TechType": "PictureFrame",
+      "Value": 1526,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "vehicleupgrades",
+      "Name": "Cyclops Depth Module MK1",
+      "TechType": "CyclopsHullModule1",
+      "Value": 1537,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "vehicleupgrades",
+      "Name": "Cyclops Depth Module MK2",
+      "TechType": "CyclopsHullModule2",
+      "Value": 1538,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "synthetics",
+      "Name": "Hatching Enzymes",
+      "TechType": "HatchingEnzymes",
+      "Value": 1547,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "vehicleupgrades",
+      "Name": "Cyclops Shield GeneRator",
+      "TechType": "CyclopsShieldModule",
+      "Value": 1551,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "vehicleupgrades",
+      "Name": "Cyclops Sonar Upgrade",
+      "TechType": "CyclopsSonArmodule",
+      "Value": 1552,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "vehicleupgrades",
+      "Name": "Cyclops Docking Bay Repair Module",
+      "TechType": "CyclopsSeamothRepairModule",
+      "Value": 1553,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "vehicleupgrades",
+      "Name": "Cyclops Decoy Tube Upgrade",
+      "TechType": "CyclopsDecoyModule",
+      "Value": 1554,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "vehicleupgrades",
+      "Name": "Cyclops Fire Suppression System",
+      "TechType": "CyclopsFireSuppressionModule",
+      "Value": 1555,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "vehicleupgrades",
+      "Name": "Cyclops Thermal Reactor Module",
+      "TechType": "CyclopsThermalReactorModule",
+      "Value": 1557,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "vehicleupgrades",
+      "Name": "Cyclops Depth Module MK3",
+      "TechType": "CyclopsHullModule3",
+      "Value": 1558,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "tools",
+      "Name": "Quantum Locker",
+      "TechType": "QuantumLocker",
+      "Value": 1567,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "decorations",
+      "Name": "Carry-all",
+      "TechType": "LuggageBag",
+      "Value": 1807,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "decorations",
+      "Name": "Electron Microscope",
+      "TechType": "LabEquipment1",
+      "Value": 1809,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "decorations",
+      "Name": "Fluid Analyser",
+      "TechType": "LabEquipment2",
+      "Value": 1810,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "decorations",
+      "Name": "Sample Analyser",
+      "TechType": "LabEquipment3",
+      "Value": 1811,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "decorations",
+      "Name": "Gray Cap",
+      "TechType": "Cap1",
+      "Value": 1814,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "decorations",
+      "Name": "Blue Cap",
+      "TechType": "Cap2",
+      "Value": 1815,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "decorations",
+      "Name": "Large Sample Flask",
+      "TechType": "LabContainer",
+      "Value": 1816,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "decorations",
+      "Name": "Small Sample Flask",
+      "TechType": "LabContainer2",
+      "Value": 1817,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "decorations",
+      "Name": "Cylindrical Sample Flask",
+      "TechType": "LabContainer3",
+      "Value": 1818,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "decorations",
+      "Name": "Aurora Miniature",
+      "TechType": "StarShipSouvenir",
+      "Value": 1823,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "decorations",
+      "Name": "Aurora Poster",
+      "TechType": "PosterAurora",
+      "Value": 1824,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "decorations",
+      "Name": "Prawn Suit Poster",
+      "TechType": "PosterExosuit1",
+      "Value": 1825,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "decorations",
+      "Name": "Prawn Suit Poster",
+      "TechType": "PosterExosuit2",
+      "Value": 1826,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "decorations",
+      "Name": "Keep Calm Poster",
+      "TechType": "PosterKitty",
+      "Value": 1827,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "decorations",
+      "Name": "Toy Car",
+      "TechType": "ToyCar",
+      "Value": 1828,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "decorations",
+      "Name": "Spy Pengling Poster",
+      "TechType": "PosterSpyPenguin",
+      "Value": 1830,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "decorations",
+      "Name": "Alterra Facilities Map",
+      "TechType": "RocketBaseWorldMap",
+      "Value": 1836,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "decorations",
+      "Name": "Motivational Poster",
+      "TechType": "PosterMotivational",
+      "Value": 1837,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "decorations",
+      "Name": "Seatruck X12 Poster",
+      "TechType": "SeatruckPoster",
+      "Value": 1838,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "decorations",
+      "Name": "Architect Poster",
+      "TechType": "PosterLilArchitect",
+      "Value": 1840,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "decorations",
+      "Name": "PictureLilKids1",
+      "TechType": "PictureLilkids1",
+      "Value": 1841,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "decorations",
+      "Name": "Bird Poster",
+      "TechType": "PosterJeremiahNobirds",
+      "Value": 1842,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "decorations",
+      "Name": "Pengling Picture",
+      "TechType": "PictureFredPengling",
+      "Value": 1843,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "decorations",
+      "Name": "Vinh Pham's Postcard",
+      "TechType": "PictureVinhPostcard",
+      "Value": 1844,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "decorations",
+      "Name": "Sam and Potato",
+      "TechType": "PictureSamPotato",
+      "Value": 1845,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "decorations",
+      "Name": "Fred's Shaving Kit",
+      "TechType": "FredShavingKit",
+      "Value": 1847,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "decorations",
+      "Name": "Seatruck Poster",
+      "TechType": "PosterSeatruck2",
+      "Value": 1848,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "decorations",
+      "Name": "Mercury Spaceship Poster",
+      "TechType": "PosterMercury",
+      "Value": 1849,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "decorations",
+      "Name": "Potato Portrait",
+      "TechType": "PicturePotatoPortrait",
+      "Value": 1850,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "decorations",
+      "Name": "PictureLilKids2",
+      "TechType": "PictureLilkids2",
+      "Value": 1851,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "decorations",
+      "Name": "Motivational Poster 2",
+      "TechType": "PosterMotivational2",
+      "Value": 1852,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "decorations",
+      "Name": "Motivational Poster 3",
+      "TechType": "PosterMotivational3",
+      "Value": 1853,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "decorations",
+      "Name": "Vesper Poster",
+      "TechType": "PosterVesper",
+      "Value": 1854,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "decorations",
+      "Name": "Sam & Danielle",
+      "TechType": "PictureSamDanielleHappy",
+      "Value": 1855,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "decorations",
+      "Name": "Biological Art",
+      "TechType": "PictureVinhBiologyArt",
+      "Value": 1857,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "decorations",
+      "Name": "Abstract Art",
+      "TechType": "PictureDanielleAbstractArt",
+      "Value": 1858,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "decorations",
+      "Name": "Necklace",
+      "TechType": "SamNecklace",
+      "Value": 1859,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "vehicleupgrades",
+      "Name": "Seamoth Depth Module",
+      "TechType": "SeamothRreinforcementModule",
+      "Value": 2100,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "vehicleupgrades",
+      "Name": "Engine Efficiency Module",
+      "TechType": "VehiclePowerUpgradeModule",
+      "Value": 2101,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "vehicleupgrades",
+      "Name": "Seamoth Solar Charger",
+      "TechType": "SeamothSolarCharge",
+      "Value": 2102,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "vehicleupgrades",
+      "Name": "Storage Module",
+      "TechType": "VehicleStorageModule",
+      "Value": 2103,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "vehicleupgrades",
+      "Name": "Seamoth Perimeter Defense System",
+      "TechType": "SeamothElectricalDefense",
+      "Value": 2104,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "vehicleupgrades",
+      "Name": "Hull Rreinforcement",
+      "TechType": "VehicleArmorPlating",
+      "Value": 2105,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "tools",
+      "Name": "Metal Sensor",
+      "TechType": "LootSensorMetal",
+      "Value": 2106,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "tools",
+      "Name": "Lithium Sensor",
+      "TechType": "LootSensorLithium",
+      "Value": 2107,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "vehicleupgrades",
+      "Name": "Seamoth Torpedo System",
+      "TechType": "SeamothTorpedoModule",
+      "Value": 2109,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "vehicleupgrades",
+      "Name": "Seamoth Sonar",
+      "TechType": "SeamothSonArmodule",
+      "Value": 2110,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "torpedoes",
+      "Name": "Vortex Torpedo",
+      "TechType": "WhirlpoolTorpedo",
+      "Value": 2111,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "vehicleupgrades",
+      "Name": "Seamoth Depth Module MK1",
+      "TechType": "VehicleHullModule1",
+      "Value": 2112,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "vehicleupgrades",
+      "Name": "Seamoth Depth Module MK2",
+      "TechType": "VehicleHullModule2",
+      "Value": 2113,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "vehicleupgrades",
+      "Name": "Seamoth Depth Module MK3",
+      "TechType": "VehicleHullModule3",
+      "Value": 2114,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "vehicleupgrades",
+      "Name": "Prawn Suit Jump Jet Upgrade",
+      "TechType": "ExosuitJetUpgradeModule",
+      "Value": 2115,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "vehicleupgrades",
+      "Name": "Prawn Suit Drill Arm",
+      "TechType": "ExosuitDrillArmModule",
+      "Value": 2116,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "vehicleupgrades",
+      "Name": "Prawn Suit Thermal Reactor",
+      "TechType": "ExosuitThermalReactorModule",
+      "Value": 2117,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "vehicleupgrades",
+      "Name": "Prawn Suit Claw Arm",
+      "TechType": "ExosuitClawArmModule",
+      "Value": 2118,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "torpedoes",
+      "Name": "Gas Torpedo",
+      "TechType": "GasTorpedo",
+      "Value": 2119,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "vehicleupgrades",
+      "Name": "Prawn Suit Propulsion Cannon",
+      "TechType": "ExosuitPropulsionArmModule",
+      "Value": 2120,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "vehicleupgrades",
+      "Name": "Prawn Suit Grappling Arm",
+      "TechType": "ExosuitGrapplingArmModule",
+      "Value": 2121,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "vehicleupgrades",
+      "Name": "Prawn Suit Torpedo Arm",
+      "TechType": "ExosuitTorpedoArmModule",
+      "Value": 2122,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "vehicleupgrades",
+      "Name": "Prawn Suit Depth Module MK1",
+      "TechType": "ExoHullModule1",
+      "Value": 2128,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "vehicleupgrades",
+      "Name": "Prawn Suit Depth Module MK2",
+      "TechType": "ExoHullModule2",
+      "Value": 2129,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "vehicleupgrades",
+      "Name": "SnowfoHop Module",
+      "TechType": "HoverbikeJumpModule",
+      "Value": 2130,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "vehicleupgrades",
+      "Name": "Seatruck Afterburner",
+      "TechType": "SeatruckUpgradeAfterBurnerce",
+      "Value": 2131,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "vehicleupgrades",
+      "Name": "Seatruck Thruster Upgrade",
+      "TechType": "SeatruckUpgradeThruster",
+      "Value": 2132,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "vehicleupgrades",
+      "Name": "Seatruck Energy Efficiency Upgrade",
+      "TechType": "SeatruckUpgradeEnergyEfficiency",
+      "Value": 2133,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "vehicleupgrades",
+      "Name": "Seatruck Perimeter Defense",
+      "TechType": "SeatruckUpgradePerimeterDefense",
+      "Value": 2134,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "vehicleupgrades",
+      "Name": "Seatruck Horse Power Upgrade",
+      "TechType": "SeatruckUpgradeHorsePower",
+      "Value": 2135,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "vehicleupgrades",
+      "Name": "Seatruck Depth Module MK1",
+      "TechType": "SeatruckUpgradeHull1",
+      "Value": 2136,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "vehicleupgrades",
+      "Name": "Seatruck Depth Module MK2",
+      "TechType": "SeatruckUpgradeHull2",
+      "Value": 2137,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "vehicleupgrades",
+      "Name": "Seatruck Depth Module MK3",
+      "TechType": "SeatruckUpgradeHull3",
+      "Value": 2138,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "vehicleupgrades",
+      "Name": "Snowfox Ice Worm Attack Reduction Module",
+      "TechType": "HoverbikeIceWormReductionModule",
+      "Value": 2139,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "baseupgrades",
+      "Name": "Scanner Room Range Upgrade",
+      "TechType": "MapRoomUpgradeScanRange",
+      "Value": 2250,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "baseupgrades",
+      "Name": "Scanner Room Speed Upgrade",
+      "TechType": "MapRoomUpgradeScanSpeed",
+      "Value": 2251,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "fish",
+      "Name": "Holefish",
+      "TechType": "Holefish",
+      "Value": 2501,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Creepvine Seed Cluster",
+      "TechType": "CreepvineSeedCluster",
+      "Value": 2503,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "fish",
+      "Name": "Peeper",
+      "TechType": "Peeper",
+      "Value": 2504,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "fish",
+      "Name": "Oculus",
+      "TechType": "Oculus",
+      "Value": 2505,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "fish",
+      "Name": "Garryfish",
+      "TechType": "Garryfish",
+      "Value": 2507,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "fish",
+      "Name": "Boomerang",
+      "TechType": "Boomerang",
+      "Value": 2510,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "eggs",
+      "Name": "Lava Larva",
+      "TechType": "LavaLarva",
+      "Value": 2511,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "fish",
+      "Name": "Eyeye",
+      "TechType": "Eyeye",
+      "Value": 2513,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Bloom Plankton",
+      "TechType": "Bloom",
+      "Value": 2514,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "fish",
+      "Name": "Bladderfish",
+      "TechType": "Bladderfish",
+      "Value": 2515,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "fish",
+      "Name": "Hoverfish",
+      "TechType": "Hoverfish",
+      "Value": 2516,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "fish",
+      "Name": "Reginald",
+      "TechType": "Reginald",
+      "Value": 2519,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "fish",
+      "Name": "Spadefish",
+      "TechType": "Spadefish",
+      "Value": 2520,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Creepvine Sample",
+      "TechType": "CreepvinePiece",
+      "Value": 2529,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "natural",
+      "Name": "Gas Pod",
+      "TechType": "Gaspod",
+      "Value": 2530,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "fish",
+      "Name": "Hoopfish",
+      "TechType": "Hoopfish",
+      "Value": 2531,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "fish",
+      "Name": "Pengling",
+      "TechType": "PenguinBaby",
+      "Value": 2575,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "fish",
+      "Name": "Arctic Peeper",
+      "TechType": "ArcticPeeper",
+      "Value": 2578,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "natural",
+      "Name": "Gel Sack",
+      "TechType": "JellyPlant",
+      "Value": 3010,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Acid Mushroom",
+      "TechType": "AcidMushroom",
+      "Value": 3021,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "natural",
+      "Name": "Blood Oil",
+      "TechType": "BloodOil",
+      "Value": 3034,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Deep Shroom",
+      "TechType": "WhiteMushroom",
+      "Value": 3035,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Speckled Rattler",
+      "TechType": "PurpleRattle",
+      "Value": 3040,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Bulbo Tree",
+      "TechType": "BulboTree",
+      "Value": 3041,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Ming Plant",
+      "TechType": "PurpleVasePlant",
+      "Value": 3042,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Jaffa Cup",
+      "TechType": "OrangeMushroom",
+      "Value": 3043,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Lantern Tree",
+      "TechType": "HangingFruitTree",
+      "Value": 3045,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Chinese Potato Plant",
+      "TechType": "PurpleVegetablePlant",
+      "Value": 3046,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Marblemelon Plant",
+      "TechType": "MelonPlant",
+      "Value": 3047,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Gabe's Feather",
+      "TechType": "GabesFeather",
+      "Value": 3049,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Eye Stalk",
+      "TechType": "EyesPlant",
+      "Value": 3052,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "natural",
+      "Name": "Table Coral",
+      "TechType": "GenericJeweledDisk",
+      "Value": 3064,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Spiral Plant",
+      "TechType": "GenericSpiral",
+      "Value": 3078,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Ribbon Plant",
+      "TechType": "GenericRibbon",
+      "Value": 3079,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Fevered Pepper Tree",
+      "TechType": "HeatFruitPlant",
+      "Value": 3088,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "natural",
+      "Name": "Root Globule",
+      "TechType": "KelpRootPustule",
+      "Value": 3092,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Young Cotton Anemone",
+      "TechType": "DeepLilyShroom",
+      "Value": 3107,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Antennae Fruit",
+      "TechType": "SmallMaroonPlantFruit",
+      "Value": 3132,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Preston's Delight",
+      "TechType": "SnowStalkerFruit",
+      "Value": 3133,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Preston's Plant",
+      "TechType": "SnowStalkerPlant",
+      "Value": 3134,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "natural",
+      "Name": "Preston's Plant Leaf",
+      "TechType": "SnowStalkerPlantLeaf",
+      "Value": 3135,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "natural",
+      "Name": "Table Coral Sample",
+      "TechType": "JeweledDiskPiece",
+      "Value": 3501,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Bulb Bush Sample",
+      "TechType": "KooshChunk",
+      "Value": 3503,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "natural",
+      "Name": "Stalker Tooth",
+      "TechType": "StalkerTooth",
+      "Value": 3504,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "natural",
+      "Name": "Fungal Sample",
+      "TechType": "TreeMushroomPiece",
+      "Value": 3505,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Bulbo Tree Sample",
+      "TechType": "BulboTreePiece",
+      "Value": 3506,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Jaffa Cup Seed",
+      "TechType": "OrangeMushroomSpore",
+      "Value": 3507,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Ming Plant Seed",
+      "TechType": "PurplevasePlantSeed",
+      "Value": 3508,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Acid Mushroom Spore",
+      "TechType": "AcidMushroomSpore",
+      "Value": 3509,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Deep Shroom Spore",
+      "TechType": "WhiteMushroomSpore",
+      "Value": 3510,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Pink Cap Spore",
+      "TechType": "PinkMushroomSpore",
+      "Value": 3511,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Speckled Rattler Spore",
+      "TechType": "PurpleRattleSpore",
+      "Value": 3512,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Lantern Fruit",
+      "TechType": "HangingFruit",
+      "Value": 3513,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Chinese Potato",
+      "TechType": "Purplevegetable",
+      "Value": 3514,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Small Marblemelon",
+      "TechType": "SmallMelon",
+      "Value": 3515,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Marblemelon",
+      "TechType": "Melon",
+      "Value": 3516,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Marblemelon Seeds",
+      "TechType": "MelonSeed",
+      "Value": 3517,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Brain Coral Sample",
+      "TechType": "PurpleBrainCoralPiece",
+      "Value": 3518,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Tiger Plant Seed",
+      "TechType": "SpikePlantSeed",
+      "Value": 3519,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Blue Palm Seed",
+      "TechType": "BluepPalmSeed",
+      "Value": 3520,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Veined Nettle Seed",
+      "TechType": "PurpleFanSeed",
+      "Value": 3521,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Pygmy Fan Seed",
+      "TechType": "SmallFanSeed",
+      "Value": 3522,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Writhing Weed Seed",
+      "TechType": "PurpleTentacleSeed",
+      "Value": 3523,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Gel Sack Spores",
+      "TechType": "JellyPlantSeed",
+      "Value": 3524,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Gabe's Feather Seed",
+      "TechType": "GabesFeatherSeed",
+      "Value": 3525,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Sea Crown Seed",
+      "TechType": "SeaCrownSeed",
+      "Value": 3526,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Membrain Tree Seed",
+      "TechType": "MembrainTreeSeed",
+      "Value": 3527,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Voxel Shrub Seed",
+      "TechType": "PinkFlowerSeed",
+      "Value": 3528,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Fern Palm Seed",
+      "TechType": "FernPalmSeed",
+      "Value": 3529,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Grub Basket Seed",
+      "TechType": "OrangePetalsPlantSeed",
+      "Value": 3530,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Eye Stalk Seed",
+      "TechType": "EyesPlantSeed",
+      "Value": 3531,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Ghost Weed Seed",
+      "TechType": "RedGreenTentacleSeed",
+      "Value": 3532,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Violet Beau Seed",
+      "TechType": "PurpleStalkSeed",
+      "Value": 3533,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Rouge Cradle Seed",
+      "TechType": "RedBasketPlantSeed",
+      "Value": 3534,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Redwort Seed",
+      "TechType": "RedBushSeed",
+      "Value": 3535,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Regress Shell Seed",
+      "TechType": "rRedConePlantSeed",
+      "Value": 3536,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Spiked Horn Grass Seed",
+      "TechType": "ShellGrassSeed",
+      "Value": 3537,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Spotted Dockleaf Seed",
+      "TechType": "SpottedLeavesPlantSeed",
+      "Value": 3538,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Furled Papyrus Seed",
+      "TechType": "RedRollPlantSeed",
+      "Value": 3539,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Hardy Cave Bush Seed",
+      "TechType": "PurpleBranchesSeed",
+      "Value": 3540,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Jellyshroom Spore",
+      "TechType": "SnakeMushroomSpore",
+      "Value": 3541,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Fevered Pepper",
+      "TechType": "HeatFruit",
+      "Value": 3542,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "natural",
+      "Name": "Snow Stalker Fur",
+      "TechType": "SnowStalkerfur",
+      "Value": 3543,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Ribbon Plant Seed",
+      "TechType": "RibbonPlantSeed",
+      "Value": 3544,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "natural",
+      "Name": "Root Globule Seed",
+      "TechType": "KelpRootPustuleSeed",
+      "Value": 3545,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Shrub Nut",
+      "TechType": "LeafyFruit",
+      "Value": 3546,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Frost Anemone Heart",
+      "TechType": "IceFruit",
+      "Value": 3547,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Frost Vase Plant Seed",
+      "TechType": "FrozenRiverPlant2Seeds",
+      "Value": 3549,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Spiral Plant Clipping",
+      "TechType": "GenericSpiralChunk",
+      "Value": 3550,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Deep Lily Shroom Seed",
+      "TechType": "DeepLilyShroomSeed",
+      "Value": 3551,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "plantsandseeds",
+      "Name": "Antennae Seed",
+      "TechType": "SmallMaroonPlantSeed",
+      "Value": 3552,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "natural",
+      "Name": "Snowball",
+      "TechType": "Snowball",
+      "Value": 4020,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "tablets",
+      "Name": "Red tablets",
+      "TechType": "PrecursorKey_Red",
+      "Value": 4200,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "tablets",
+      "Name": "Blue tablets",
+      "TechType": "PrecursorKey_Blue",
+      "Value": 4201,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "tablets",
+      "Name": "Orange tablets",
+      "TechType": "PrecursorKey_Orange",
+      "Value": 4202,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "tablets",
+      "Name": "White tablets",
+      "TechType": "PrecursorKey_White",
+      "Value": 4203,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "tablets",
+      "Name": "Purple tablets",
+      "TechType": "PrecursorKey_Purple",
+      "Value": 4204,
+      "GameVersion": "1"
+    },
+    {
+      "CategoryID": "batteries",
+      "Name": "Ion Power Cell",
+      "TechType": "PrecursorIonPowerCell",
+      "Value": 4209,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "batteries",
+      "Name": "Ion Battery",
+      "TechType": "PrecursorIonBattery",
+      "Value": 4210,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "water",
+      "Name": "Filtered Water",
+      "TechType": "FilteredWater",
+      "Value": 4500,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "water",
+      "Name": "Disinfected Water",
+      "TechType": "DisinfectedWater",
+      "Value": 4501,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Cooked Peeper",
+      "TechType": "CookedPeeper",
+      "Value": 4502,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Cooked Holefish",
+      "TechType": "CookedHolefish",
+      "Value": 4503,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Cooked Garryfish",
+      "TechType": "CookedGarryfish",
+      "Value": 4504,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Cooked Reginald",
+      "TechType": "CookedReginald",
+      "Value": 4505,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Cooked Bladderfish",
+      "TechType": "CookedBladderfish",
+      "Value": 4506,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Cooked Hoverfish",
+      "TechType": "CookedHoverfish",
+      "Value": 4507,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Cooked Spaded Fish",
+      "TechType": "CookedSpadefish",
+      "Value": 4508,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Cooked Boomerang",
+      "TechType": "CookedBoomerang",
+      "Value": 4509,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Cooked Eyeye",
+      "TechType": "CookedEyeye",
+      "Value": 4510,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Cooked Oculus",
+      "TechType": "CookedOculus",
+      "Value": 4511,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Cooked Hoopfish",
+      "TechType": "CookedHoopfish",
+      "Value": 4512,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Nutrient Block",
+      "TechType": "NutrientBlock",
+      "Value": 4513,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "First Aid Kit",
+      "TechType": "FirstAidKit",
+      "Value": 4514,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "water",
+      "Name": "Reclaimed Water",
+      "TechType": "StillSuitWater",
+      "Value": 4515,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "water",
+      "Name": "Large Filtered Water",
+      "TechType": "BigFilteredWater",
+      "Value": 4516,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Cooked Spinefish",
+      "TechType": "CookedSpinefish",
+      "Value": 4517,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Cooked Red Eyeye",
+      "TechType": "CookedLavaEyeye",
+      "Value": 4518,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Cooked Magmarang",
+      "TechType": "CookedLavaBoomerang",
+      "Value": 4519,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "MiChips",
+      "TechType": "Snack1",
+      "Value": 4520,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Rice Snack",
+      "TechType": "Snack2",
+      "Value": 4521,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Potato Mi",
+      "TechType": "Snack3",
+      "Value": 4522,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Coffee Americano",
+      "TechType": "Coffee",
+      "Value": 4523,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Heating Gel",
+      "TechType": "HeatingGel",
+      "Value": 4524,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Cooked Spinnerfish",
+      "TechType": "CookedSpinnerfish",
+      "Value": 4525,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Cooked Symbiote",
+      "TechType": "CookedSymbiote",
+      "Value": 4526,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Cooked Arctic Peeper",
+      "TechType": "CookedArcticPeeper",
+      "Value": 4527,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Cooked Arrow Ray",
+      "TechType": "CookedArrowRay",
+      "Value": 4528,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Cooked Nootfish",
+      "TechType": "CookedNootfish",
+      "Value": 4529,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Cooked Triops",
+      "TechType": "CookedTriops",
+      "Value": 4530,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Cooked Feather Fish",
+      "TechType": "CookedFeatherfish",
+      "Value": 4531,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Cooked Feather Fish (Red)",
+      "TechType": "CookedFeatherFishRed",
+      "Value": 4532,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Cooked Discus Fish",
+      "TechType": "CookeDiscusfish",
+      "Value": 4533,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "water",
+      "Name": "Water Purification tablets",
+      "TechType": "WaterPurificationtablets",
+      "Value": 4534,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Spicy Fruit Salad",
+      "TechType": "SpicyFruitSalad",
+      "Value": 4535,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Cured Peeper",
+      "TechType": "CuredPeeper",
+      "Value": 4600,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Cured Holefish",
+      "TechType": "CuredHolefish",
+      "Value": 4601,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Cured Garryfish",
+      "TechType": "CuredGarryfish",
+      "Value": 4602,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Cured Reginald",
+      "TechType": "CuredReginald",
+      "Value": 4603,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Cured Bladderfish",
+      "TechType": "CuredBladderfish",
+      "Value": 4604,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Cured Hoverfish",
+      "TechType": "CuredHoverfish",
+      "Value": 4605,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Cured Spadefish",
+      "TechType": "CuredSpadefish",
+      "Value": 4606,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Cured Boomerang",
+      "TechType": "CuredBoomerang",
+      "Value": 4607,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Cured Eyeye",
+      "TechType": "CuredEyeye",
+      "Value": 4608,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Cured Oculus",
+      "TechType": "CuredOculus",
+      "Value": 4609,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Cured Hoopfish",
+      "TechType": "CuredHoopfish",
+      "Value": 4610,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Cured Spinefish",
+      "TechType": "CuredSpinefish",
+      "Value": 4611,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Cured Red Eyeye",
+      "TechType": "CuredLavaEyeye",
+      "Value": 4612,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Cured Magmarang",
+      "TechType": "CuredLavaBoomerang",
+      "Value": 4613,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Cured Spinnerfish",
+      "TechType": "CuredSpinnerfish",
+      "Value": 4614,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Cured Symbiote",
+      "TechType": "CuredSymbiote",
+      "Value": 4615,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Cured Arctic Peeper",
+      "TechType": "CuredArcticPeeper",
+      "Value": 4616,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Cured Arrow Ray",
+      "TechType": "CuredArrowRay",
+      "Value": 4617,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Cured Nootfish",
+      "TechType": "CuredNootfish",
+      "Value": 4618,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Cured Triops",
+      "TechType": "CuredTriops",
+      "Value": 4619,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Cured Feather Fish",
+      "TechType": "CuredFeatherfish",
+      "Value": 4620,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Cured Red Feather Fish",
+      "TechType": "CuredFeatherfishred",
+      "Value": 4621,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "food",
+      "Name": "Cured Discus Fish",
+      "TechType": "CuredDiscusfish",
+      "Value": 4622,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "baseupgrades",
+      "Name": "Camera Drone",
+      "TechType": "MapRoomCamera",
+      "Value": 5527,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "tools",
+      "Name": "Floating Pump",
+      "TechType": "BasePipeConnector",
+      "Value": 5530,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "decorations",
+      "Name": "Natural Selection 2 Poster",
+      "TechType": "Poster",
+      "Value": 6005,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "natural",
+      "Name": "Flower Spore",
+      "TechType": "LilypadResource",
+      "Value": 8005,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "tools",
+      "Name": "Spy Pengling",
+      "TechType": "SpyPenguin",
+      "Value": 8030,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "tools",
+      "Name": "Spy Pengling Remote",
+      "TechType": "SpyPenguinRemote",
+      "Value": 8033,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "decorations",
+      "Name": "Alterra Bounty Poster",
+      "TechType": "AlterraBountyPoster",
+      "Value": 8036,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "synthetics",
+      "Name": "Hydraulic Fluid",
+      "TechType": "HydraulicFluid",
+      "Value": 8044,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "tools",
+      "Name": "Test Override Module",
+      "TechType": "RadioTowerTOM",
+      "Value": 8045,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "decorations",
+      "Name": "Sea Creature Poster",
+      "TechType": "PosterParvan",
+      "Value": 8047,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "synthetics",
+      "Name": "Kharaa Antidote",
+      "TechType": "FrozenCreatureAntidote",
+      "Value": 8049,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "decorations",
+      "Name": "Community Poster",
+      "TechType": "PosterBunkerCommunity",
+      "Value": 8050,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "decorations",
+      "Name": "Glacial Basin Map",
+      "TechType": "SpyPenguinMap",
+      "Value": 8051,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "decorations",
+      "Name": "Roller Derby Poster",
+      "TechType": "PosterZetaRollerDerby",
+      "Value": 8052,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "decorations",
+      "Name": "Spy Pengling Concepts",
+      "TechType": "PosterSpyPenguinConcepts",
+      "Value": 8053,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "decorations",
+      "Name": "Alien Intruder Poster",
+      "TechType": "PosterBoardgame",
+      "Value": 8054,
+      "GameVersion": "2"
+    },
+    {
+      "CategoryID": "decorations",
+      "Name": "Hang in there Poster",
+      "TechType": "PosterHangInThere",
+      "Value": 8055,
+      "GameVersion": "A"
+    },
+    {
+      "CategoryID": "decorations",
+      "Name": "Poster Parvan Biome",
+      "TechType": "PosterParvanBiome",
+      "Value": 8060,
+      "GameVersion": "2"
+    }
+  ]
