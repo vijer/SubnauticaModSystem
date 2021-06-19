@@ -148,7 +148,7 @@ namespace AutosortLockers
 
 			var rt = colorGrid.rectTransform;
 			// The first Vector2 positions the colorGrid on the locker horz / vert.
-			RectTransformExtensions.SetParams(rt, new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), parent);
+			RectTransformExtensions.SetParams(rt, new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.6f), parent);
 			RectTransformExtensions.SetSize(rt, width, height);
 
 			colorGrid.background = colorGrid.gameObject.AddComponent<Image>();
