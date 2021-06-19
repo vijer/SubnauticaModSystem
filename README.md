@@ -22,3 +22,4 @@ Going forward, I would like to:
 1) Add an inventory count to the locker labels (i.e. [15] Gold, [30] Silver, etc.)
 2) Truncate the TechType names that are read in from the game files.
 3) Make these changes to SubNautica
+4) Change the LOCKER label on the Color Settings screen
