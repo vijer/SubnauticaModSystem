@@ -9,14 +9,13 @@ using TMPro;
 
 namespace AutosortLockers
 {
-	public class PickerButton : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
+	public class FilterPickerButton : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 	{
 		private static readonly Color inactiveColor = new Color(0.7f, 0.7f, 0.7f, 0.5f);
 		private static readonly Color inactiveHoverColor = new Color(0.7f, 0.7f, 0.7f, 1f);
 		private static readonly Color upColor = new Color(0.9f, 0.9f, 0.9f, 1f);
 		private static readonly Color hoverColor = new Color(1, 1, 1);
 		private const int Slice = 70;
-
 		private bool hover;
 		private bool tabActive = true;
 		private AutosorterFilter filter;
@@ -102,21 +101,22 @@ namespace AutosortLockers
 			tabActive = active;
 		}
 
-		public static PickerButton Create(Transform parent,
+		public static FilterPickerButton Create(Transform parent,
 #if SUBNAUTICA
 			Text textPrefab,
 #elif BELOWZERO
-						TextMeshProUGUI textPrefab,
+			TextMeshProUGUI textPrefab,
 #endif
-						Action<AutosorterFilter> action, int width = 100, int height = 18)
+			// The size of the picker buttons, only the height is useful, the width is overwritten later
+			Action<AutosorterFilter> action, int width = 100, int height = 18)
 		{
-			var button = new GameObject("PickerButton", typeof(RectTransform)).AddComponent<PickerButton>();
+			var button = new GameObject("PickerButton", typeof(RectTransform)).AddComponent<FilterPickerButton>();
 			button.transform.SetParent(parent, false);
 
 			button.background = new GameObject("Background", typeof(RectTransform)).AddComponent<Image>();
 			RectTransformExtensions.SetParams(button.background.rectTransform, new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), button.transform);
 			RectTransformExtensions.SetSize(button.background.rectTransform, width * 10, height * 10);
-			button.background.rectTransform.localScale = new Vector3(0.1f, 0.1f, 1);
+			button.background.rectTransform.localScale = new Vector3(0.1f, 0.1f, 0.5f);
 			button.background.sprite = ImageUtils.Load9SliceSprite(Mod.GetAssetPath("MainMenuStandardSprite.png"), new RectOffset(Slice, Slice, Slice, Slice));
 			button.background.color = upColor;
 			button.background.type = Image.Type.Sliced;

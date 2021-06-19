@@ -386,9 +386,11 @@ namespace AutosortLockers
 				var canvas = LockerPrefabShared.CreateCanvas(prefab.transform);
 				autoSorter.background = LockerPrefabShared.CreateBackground(canvas.transform, autoSorter.name);
 				autoSorter.icon = LockerPrefabShared.CreateIcon(autoSorter.background.transform, MainColor, 40);
-				autoSorter.text = LockerPrefabShared.CreateText(autoSorter.background.transform, prefabText, MainColor, 0, 14, "Autosorter");
+				// The first number is the vertical position, the second number is the font
+				autoSorter.text = LockerPrefabShared.CreateText(autoSorter.background.transform, prefabText, MainColor, 0, 14, "Autosorter", "Autosorter");
+				autoSorter.text.rectTransform.anchoredPosition += new Vector2(20, 0);
 
-				autoSorter.sortingText = LockerPrefabShared.CreateText(autoSorter.background.transform, prefabText, MainColor, -120, 12, "Sorting...");
+				autoSorter.sortingText = LockerPrefabShared.CreateText(autoSorter.background.transform, prefabText, MainColor, -120, 18, "Sorting...", "Autosorter");
 #if SUBNAUTICA
 				autoSorter.sortingText.alignment = TextAnchor.UpperCenter;
 #elif BELOWZERO

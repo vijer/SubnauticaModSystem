@@ -146,6 +146,17 @@ namespace AutosortLockers
 
 		private void UpdateText()
 		{
+			int strLen = 17;
+			string lockerType = container.name;
+			if (lockerType == "AutosortTarget(Clone)")
+			{
+				strLen = 17; // Trim filter lables so they don't wrap on the lockers
+			}
+			else
+			{
+				strLen = 22; // Trim filter lables so they don't wrap on the lockers
+			}
+
 			if (text != null)
 			{
 				if (currentFilters == null || currentFilters.Count == 0)
@@ -159,8 +170,8 @@ namespace AutosortLockers
 				}
 				else
 				{
-					string filtersText = string.Join("\n", currentFilters.Select((f) => f.IsCategory() ? "[" + (f.GetString().Length > 15 ? f.GetString().Substring(0, 15) : f.GetString()) + "]" : f.GetString().Length > 15 ? f.GetString().Substring(0, 15) : f.GetString()).ToArray());
-
+					string filtersText = string.Join("\n", currentFilters.Select((f) => f.IsCategory() ? "[" + (f.GetString().Length > strLen ? f.GetString().Substring(0, strLen) : f.GetString()) + "]" : f.GetString().Length > strLen ? f.GetString().Substring(0, strLen) : f.GetString()).ToArray());
+					// Filter text displayed on the lockers
 					text.text = filtersText;
 
 					if (currentFilters.Count == 1)
@@ -168,7 +179,7 @@ namespace AutosortLockers
 #if SUBNAUTICA
 						text.alignment = TextAnchor.MiddleCenter;
 #elif BELOWZERO
-					text.alignment = TextAlignmentOptions.Center;
+						text.alignment = TextAlignmentOptions.Center;
 #endif
 					}
 					else
@@ -320,7 +331,7 @@ namespace AutosortLockers
 			{
 				Mod.Save();
 			}
-			
+
 			UpdateQuantityText();
 		}
 
@@ -439,6 +450,7 @@ namespace AutosortLockers
 			Logger.Log("Object Initialize from Save Data");
 			label.text = saveData.Label;
 			label.color = saveData.LabelColor.ToColor();
+			DestroyImmediate(label);
 			icon.color = saveData.IconColor.ToColor();
 			configureButtonImage.color = saveData.ButtonsColor.ToColor();
 			customizeButtonImage.color = saveData.ButtonsColor.ToColor();
@@ -481,7 +493,7 @@ namespace AutosortLockers
 			Dictionary<string, AutosorterFilter> validCategories = new Dictionary<string, AutosorterFilter>();
 
 			var filterList = AutosorterList.GetFilters();
-			
+
 			foreach (var filter in filterList)
 			{
 				if (filter.IsCategory())
@@ -509,14 +521,6 @@ namespace AutosortLockers
 					newData.Add(filter);
 					continue;
 				}
-
-				var newTypes = AutosorterList.GetOldFilter(filter.Category, out bool success, out string newCategory);
-				if (success)
-				{
-					newData.Add(new AutosorterFilter() { Category = newCategory, Types = newTypes });
-					continue;
-				}
-				newData.Add(filter);
 			}
 			return newData;
 		}
@@ -575,9 +579,9 @@ namespace AutosortLockers
 		}
 
 		private void UpdateQuantityText()
-		{ 
+		{
 			var count = container.container.count;
-			
+
 			quantityText.text = count == 0 ? "Empty" : count.ToString();
 		}
 
@@ -729,6 +733,8 @@ namespace AutosortLockers
 			// Destroys the lable on the small locker
 			var label = prefab.FindChild("Label");
 			DestroyImmediate(label);
+			label = prefab.FindChild("Locker");
+			DestroyImmediate(label);
 
 			var canvas = LockerPrefabShared.CreateCanvas(prefab.transform);
 			if (basePrefab == TechType.Locker)
@@ -740,9 +746,17 @@ namespace AutosortLockers
 			autosortTarget.background = LockerPrefabShared.CreateBackground(canvas.transform, prefab.name);
 
 			int iconPos = 75; // The vertical pos of the icon at the top of the container
-			int textPos = 108; // The vertical pos of the "Locker" text at the top of the container
+			int textPos = 110; // The vertical pos of the "Locker" text at the top of the container
 			int buttonPos = -104; // The vertical positions of the color and customize buttons
-			int labelFont = 0; // Set to zero and the Locker text does not display
+			int labelFont = 12; // The font for the label on the lockers
+			if (Mod.config.ShowLabel)
+			{                // This is a cludge until I can find the placeholder
+				labelFont = 0; // Set to zero and the Locker text does not display
+			}
+			else
+			{
+				labelFont = 12;
+			}
 
 			// Change the positions for the Standing Locker
 			if (prefab.name == "Locker(Clone)")
@@ -751,27 +765,33 @@ namespace AutosortLockers
 				textPos = 120;
 				buttonPos = -120;
 			}
-			
-			// Pos the locker icon
+
+			// Position the locker icon
 			autosortTarget.icon = LockerPrefabShared.CreateIcon(autosortTarget.background.transform, autosortTarget.textPrefab.color, iconPos);
-
-			autosortTarget.text = LockerPrefabShared.CreateText(autosortTarget.background.transform, autosortTarget.textPrefab, autosortTarget.textPrefab.color, 0, 12, "Any - Doesn't display");
-
-			// The "Locker" text position
-			autosortTarget.label = LockerPrefabShared.CreateText(autosortTarget.background.transform, autosortTarget.textPrefab, autosortTarget.textPrefab.color, textPos, labelFont, "Locker - Doesn't display");
+			// Position the Filter lables, the first number is the horizontal position, the second number is the font size.
+			autosortTarget.text = LockerPrefabShared.CreateText(autosortTarget.background.transform, autosortTarget.textPrefab, autosortTarget.textPrefab.color, 0, 12, "[Any] - Doesn't display", prefab.name);
+			// Position the "Locker" text
+			autosortTarget.label = LockerPrefabShared.CreateText(autosortTarget.background.transform, autosortTarget.textPrefab, autosortTarget.textPrefab.color, textPos, labelFont, "Locker - Doesn't display", prefab.name);
 
 			autosortTarget.background.gameObject.SetActive(false);
 			autosortTarget.icon.gameObject.SetActive(false);
 			autosortTarget.text.gameObject.SetActive(false);
-			// The container ?? 
-			autosortTarget.plus = LockerPrefabShared.CreateText(autosortTarget.background.transform, autosortTarget.textPrefab, autosortTarget.textPrefab.color, 0, 12, "+ - Doesn't display");
+			// The container filters ??
+			autosortTarget.plus = LockerPrefabShared.CreateText(autosortTarget.background.transform, autosortTarget.textPrefab, autosortTarget.textPrefab.color, 0, 12, "+ - Doesn't display", prefab.name);
+
 			// Pos of the color picker
 			autosortTarget.plus.color = new Color(autosortTarget.textPrefab.color.r, autosortTarget.textPrefab.color.g, autosortTarget.textPrefab.color.g, 0);
-			// ?? Seems to be an unnecessary rectangle 
-			//autosortTarget.plus.rectTransform.anchoredPosition += new Vector2(30, 70);
 			// Pos of the item count on the locker
-			autosortTarget.quantityText = LockerPrefabShared.CreateText(autosortTarget.background.transform, autosortTarget.textPrefab, autosortTarget.textPrefab.color, 0, 12, "XX - Doesn't display");
-			autosortTarget.quantityText.rectTransform.anchoredPosition += new Vector2(-40, buttonPos);
+			autosortTarget.quantityText = LockerPrefabShared.CreateText(autosortTarget.background.transform, autosortTarget.textPrefab, autosortTarget.textPrefab.color, 0, 12, "XX - Doesn't display", prefab.name);
+			// Pos the quantity text on the locker
+			if (prefab.name == "Locker(Clone)")
+			{
+				autosortTarget.quantityText.rectTransform.anchoredPosition += new Vector2(14, -210);
+			}
+			else
+			{
+				autosortTarget.quantityText.rectTransform.anchoredPosition += new Vector2(4, -198);
+			}
 			// Pos of the configure button on the locker
 			autosortTarget.configureButton = ConfigureButton.Create(autosortTarget.background.transform, autosortTarget.textPrefab.color, 45, buttonPos);
 			autosortTarget.configureButtonImage = autosortTarget.configureButton.GetComponent<Image>();

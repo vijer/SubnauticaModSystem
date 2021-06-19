@@ -8,58 +8,26 @@ namespace AutosortLockers
 {
 	class GetLists
 	{
+		// Class to get valid lists of Category and TechTypes
+
 		//Vince
 		//Logger.Log("Vince: " + text.text);
-		//var iCount = container.container.GetCount(TechType);
+		//QModManager.Utility.Logger.Log(QModManager.Utility.Logger.Level.Debug, $"Vince: " + text.text);
 
-		// Class to get valid lists of categories and TechTypes
-		public string Category;
-		public string GetCategory()
+		private static string FilterFromJson;
+
+		public static string GetFiltersFromJson(char listType, char gameVersion)
 		{
 			// Load categories.json
 			JObject catObj = JObject.Load(new JsonTextReader(File.OpenText(Mod.GetModPath() + "/categories.json")));
-
-			foreach (var categoriesJson in catObj)
-			{
-				// Filter variables
-				var gameVersions = new HashSet<char> { 'A', '2' };
-				var usedInMod = new HashSet<bool> { true };
-
-				// Select all Items[*] array items
-				var query = from c in catObj.SelectTokens("Categories[*]").OfType<JObject>()
-										let gameVersion = (char)c["GameVersion"]// Process the filters
-										where usedInMod.Contains((bool)c["UsedInMod"]) && gameVersions.Contains((char)c["GameVersion"])
-										select new
-										{
-											CategoryDescription = c["CategoryDescription"],
-											CategoryID = c["CategoryID"]
-										};
-
-				// Materialize the query into a list of results.
-				var results = query.ToList();
-				// Get only the CategoryID
-				var items = results.ToDictionary(x => x, x => x.CategoryID);
-				foreach (var keyvalue in items)
-				{
-					Category = keyvalue.Value + ",";
-				}
-			}
-			return Category;
-		}
-
-		public string TechTypes;
-		public string GetTechType()
-		{
-			// Load categories.json
-			JObject catObj = JObject.Load(new JsonTextReader(File.OpenText("D:/Code/Tests/TechTypeFilter/categories.json")));
 			// Load techtypes.json
-			JObject ttObj = JObject.Load(new JsonTextReader(File.OpenText("D:/Code/Tests/TechTypeFilter/techtypes.json")));
+			JObject ttObj = JObject.Load(new JsonTextReader(File.OpenText(Mod.GetModPath() + "/techtypes.json")));
 
 			foreach (var categoriesJson in catObj)
 			{
 				// Filter variables
-				var gameVersions = new HashSet<char> { 'A', '2' };
-				var categoryIDs = new HashSet<string> { "metals", "tablets" };
+				var gameVersions = new HashSet<char> { 'A', gameVersion };
+				var categoryIDs = new HashSet<string> { };
 				var useInMod = new HashSet<bool> { true };
 
 				// Right outer join on catObj.  Select all Items[*] array items
@@ -84,16 +52,21 @@ namespace AutosortLockers
 											TechID = t["TechID"],
 											GameVersion = t["GameVersion"]
 										};
-				// Materialize the query into a list of results.
-				var results = query.ToList();
-				// Get only the TechType
-				var items = results.ToDictionary(x => x, x => x.TechID);
-				foreach (var keyvalue in items)
+				// Convert the query into a formatted list
+				if (listType == 'T')
 				{
-					TechTypes = keyvalue.Value + ",";
+					FilterFromJson = JsonConvert.SerializeObject(query.ToArray(), Formatting.Indented);
+				}
+				else
+				{
+					var results = query.GroupBy(
+					i => i.CategoryDescription,
+					t => t.TechID,
+					(key, g) => new { Category = key, Types = g.ToList() });
+					FilterFromJson = JsonConvert.SerializeObject(results, Formatting.Indented);
 				}
 			}
-			return TechTypes;
+			return FilterFromJson;
 		}
 	}
 }

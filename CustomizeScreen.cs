@@ -18,13 +18,6 @@ namespace AutosortLockers
 
 		[SerializeField]
 		private Image background;
-#if SUBNAUTICA
-		[SerializeField]
-		private Text labelLabel;
-#elif BELOWZERO
-		//[SerializeField]
-		//private TextMeshProUGUI labelLabel;
-#endif
 		[SerializeField]
 		private LabelController label;
 		[SerializeField]
@@ -187,27 +180,22 @@ namespace AutosortLockers
 #endif
 			textPrefab.fontSize = 12;
 			textPrefab.color = CustomizeScreen.ScreenContentColor;
-
+			// The color picker settings 
 			var screen = new GameObject("CustomizeScreen", typeof(RectTransform)).AddComponent<CustomizeScreen>();
 			RectTransformExtensions.SetParams(screen.rectTransform, new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), parent);
 			RectTransformExtensions.SetSize(screen.rectTransform, 114, 241);
 
 			screen.background = new GameObject("Background").AddComponent<Image>();
 			screen.background.sprite = ImageUtils.LoadSprite(Mod.GetAssetPath("CustomizeScreen.png"));
-			RectTransformExtensions.SetParams(screen.background.rectTransform, new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), screen.transform);
+			// 1st = 2nd = 3rd = horizontal 4th = vertical positon of the color settings
+			RectTransformExtensions.SetParams(screen.background.rectTransform, new Vector2(0.5f, 0.5f), new Vector2(0.41f, 0.4f), screen.transform);
 			RectTransformExtensions.SetSize(screen.background.rectTransform, 114, 220);
 
-			//screen.labelLabel = LockerPrefabShared.CreateText(screen.background.transform, textPrefab, ScreenContentColor, 100, 9, "");
-			//RectTransformExtensions.SetSize(screen.labelLabel.rectTransform, 90, 40);
-#if SUBNAUTICA
-			screen.labelLabel.alignment = TextAnchor.MiddleLeft;
-#elif BELOWZERO
-			//screen.labelLabel.alignment = TextAlignmentOptions.MidlineLeft;
-#endif
 			screen.label = LabelController.Create(data, screen.background.transform, lockerPrefab);
+			// The position of the LOCKER label 
 			screen.label.rectTransform.anchoredPosition = new Vector2(0, 70);
-
-			screen.exitButton = ConfigureButton.Create(screen.background.transform, Color.white, 38, -92);
+			// The position of the close (X) button on the color settings
+			screen.exitButton = ConfigureButton.Create(screen.background.transform, Color.white, 0, -85);
 
 			var startX = 0;
 			var startY = 30;

@@ -14,6 +14,13 @@
       "GameVersion": "A"
     },
     {
+      "CategoryID": "synthetics",
+      "Name": "Fiber Mesh",
+      "TechType": "Fiber",
+      "Value": 3,
+      "GameVersion": "A"
+    },
+    {
       "CategoryID": "metals",
       "Name": "Copper Ore",
       "TechType": "Copper",
@@ -158,13 +165,6 @@
       "Name": "Computer Chip",
       "TechType": "ComputerChip",
       "Value": 44,
-      "GameVersion": "A"
-    },
-    {
-      "CategoryID": "synthetics",
-      "Name": "Fiber Mesh",
-      "TechType": "Fiber",
-      "Value": 45,
       "GameVersion": "A"
     },
     {
@@ -2303,7 +2303,7 @@
       "GameVersion": "A"
     },
     {
-      "CategoryID": "food",
+      "CategoryID": "tools",
       "Name": "First Aid Kit",
       "TechType": "FirstAidKit",
       "Value": 4514,

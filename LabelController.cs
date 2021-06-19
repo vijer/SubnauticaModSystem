@@ -37,7 +37,7 @@ namespace AutosortLockers
 			target = data;
 
 			text = GameObject.Instantiate(textPrefab);
-			text.fontSize = 16;
+			text.fontSize = 12;
 			text.gameObject.name = "Text";
 			text.rectTransform.SetParent(transform, false);
 			RectTransformExtensions.SetSize(text.rectTransform, 140, 50);

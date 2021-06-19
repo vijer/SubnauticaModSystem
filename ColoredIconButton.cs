@@ -120,7 +120,7 @@ namespace AutosortLockers
 			if (textPrefab != null)
 			{
 				var spacing = 5;
-				text = LockerPrefabShared.CreateText(rt, textPrefab, color, 0, 10, label);
+				text = LockerPrefabShared.CreateText(rt, textPrefab, color, 0, 10, label, "Label");
 				RectTransformExtensions.SetSize(text.rectTransform, width - 20 - spacing, 20);
 				text.rectTransform.anchoredPosition = new Vector2(10 + spacing, 0);
 #if SUBNAUTICA
