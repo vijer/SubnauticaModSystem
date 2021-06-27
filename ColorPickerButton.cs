@@ -31,7 +31,11 @@ namespace AutosortLockers
 			onClick(id);
 		}
 
+#if SN
+		public void Initialize(int id, Color color, bool toggled, Atlas.Sprite imageSprite)
+#elif BZ
 		public void Initialize(int id, Color color, bool toggled, Sprite imageSprite)
+#endif
 		{
 			this.id = id;
 			this.toggled = toggled;

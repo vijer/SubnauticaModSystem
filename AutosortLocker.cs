@@ -7,9 +7,8 @@ using SMLHelper.V2.Assets;
 using SMLHelper.V2.Crafting;
 using UnityEngine;
 using UnityEngine.UI;
-#if SUBNAUTICA
-//using RecipeData = SMLHelper.V2.Crafting.RecipeData;
-#elif BELOWZERO
+#if SN
+#elif BZ
 using TMPro;
 #endif
 
@@ -33,12 +32,12 @@ namespace AutosortLockers
 		private Image background;
 		[SerializeField]
 		private Image icon;
-#if SUBNAUTICA
+#if SN
 		[SerializeField]
 		private Text text;
 		[SerializeField]
 		private Text sortingText;
-#elif BELOWZERO
+#elif BZ
 		[SerializeField]
 		private TextMeshProUGUI text;
 		[SerializeField]
@@ -312,47 +311,46 @@ namespace AutosortLockers
 			}
 
 			public override TechGroup GroupForPDA => TechGroup.InteriorModules;
-
 			public override TechCategory CategoryForPDA => TechCategory.InteriorModule;
 
-#if SUBNAUTICA
-			public override GameObject GetGameObject()
-			{
-				GameObject originalPrefab = CraftData.GetPrefabForTechType(TechType.SmallLocker);
-				GameObject prefab = GameObject.Instantiate(originalPrefab);
+#if SN
+			//public override GameObject GetGameObject()
+			//{
+			//	GameObject originalPrefab = CraftData.GetPrefabForTechType(TechType.SmallLocker);
+			//	GameObject prefab = GameObject.Instantiate(originalPrefab);
 
-				var container = prefab.GetComponent<StorageContainer>();
-				container.width = Mod.config.AutosorterWidth;
-				container.height = Mod.config.AutosorterHeight;
-				container.container.Resize(Mod.config.AutosorterWidth, Mod.config.AutosorterHeight);
+			//	var container = prefab.GetComponent<StorageContainer>();
+			//	container.width = Mod.config.AutosorterWidth;
+			//	container.height = Mod.config.AutosorterHeight;
+			//	container.container.Resize(Mod.config.AutosorterWidth, Mod.config.AutosorterHeight);
 
-				var meshRenderers = prefab.GetComponentsInChildren<MeshRenderer>();
-				foreach (var meshRenderer in meshRenderers)
-				{
-					meshRenderer.material.color = new Color(1, 0, 0);
-				}
+			//	var meshRenderers = prefab.GetComponentsInChildren<MeshRenderer>();
+			//	foreach (var meshRenderer in meshRenderers)
+			//	{
+			//		meshRenderer.material.color = new Color(1, 0, 0);
+			//	}
 
-				var prefabText = prefab.GetComponentInChildren<Text>();
-				var label = prefab.FindChild("Label");
-				DestroyImmediate(label);
+			//	var prefabText = prefab.GetComponentInChildren<Text>();
+			//	var label = prefab.FindChild("Label");
+			//	DestroyImmediate(label);
 
-				var autoSorter = prefab.AddComponent<AutosortLocker>();
+			//	var autoSorter = prefab.AddComponent<AutosortLocker>();
 
-				var canvas = LockerPrefabShared.CreateCanvas(prefab.transform);
-				autoSorter.background = LockerPrefabShared.CreateBackground(canvas.transform);
-				autoSorter.icon = LockerPrefabShared.CreateIcon(autoSorter.background.transform, MainColor, 40);
-				autoSorter.text = LockerPrefabShared.CreateText(autoSorter.background.transform, prefabText, MainColor, 0, 14, "Autosorter");
+			//	var canvas = LockerPrefabShared.CreateCanvas(prefab.transform);
+			//	autoSorter.background = LockerPrefabShared.CreateBackground(canvas.transform);
+			//	autoSorter.icon = LockerPrefabShared.CreateIcon(autoSorter.background.transform, MainColor, 40);
+			//	autoSorter.text = LockerPrefabShared.CreateText(autoSorter.background.transform, prefabText, MainColor, 0, 14, "Autosorter");
 
-				autoSorter.sortingText = LockerPrefabShared.CreateText(autoSorter.background.transform, prefabText, MainColor, -120, 12, "Sorting...");
-				autoSorter.sortingText.alignment = TextAnchor.UpperCenter;
+			//	autoSorter.sortingText = LockerPrefabShared.CreateText(autoSorter.background.transform, prefabText, MainColor, -120, 12, "Sorting...");
+			//	autoSorter.sortingText.alignment = TextAnchor.UpperCenter;
 
-				autoSorter.background.gameObject.SetActive(false);
-				autoSorter.icon.gameObject.SetActive(false);
-				autoSorter.text.gameObject.SetActive(false);
-				autoSorter.sortingText.gameObject.SetActive(false);
+			//	autoSorter.background.gameObject.SetActive(false);
+			//	autoSorter.icon.gameObject.SetActive(false);
+			//	autoSorter.text.gameObject.SetActive(false);
+			//	autoSorter.sortingText.gameObject.SetActive(false);
 
-				return prefab;
-			}
+			//	return prefab;
+			//}
 #endif
 
 			public override IEnumerator GetGameObjectAsync(IOut<GameObject> gameObject)
@@ -373,9 +371,9 @@ namespace AutosortLockers
 					meshRenderer.material.color = new Color(1, 0, 0);
 				}
 
-#if SUBNAUTICA
+#if SN
 				var prefabText = prefab.GetComponentInChildren<Text>();
-#elif BELOWZERO
+#elif BZ
 				var prefabText = prefab.GetComponentInChildren<TextMeshProUGUI>();
 #endif
 				var label = prefab.FindChild("Label");
@@ -391,9 +389,9 @@ namespace AutosortLockers
 				autoSorter.text.rectTransform.anchoredPosition += new Vector2(20, 0);
 
 				autoSorter.sortingText = LockerPrefabShared.CreateText(autoSorter.background.transform, prefabText, MainColor, -120, 18, "Sorting...", "Autosorter");
-#if SUBNAUTICA
+#if SN
 				autoSorter.sortingText.alignment = TextAnchor.UpperCenter;
-#elif BELOWZERO
+#elif BZ
 				autoSorter.sortingText.alignment = TextAlignmentOptions.Top;
 #endif
 
@@ -406,6 +404,30 @@ namespace AutosortLockers
 				yield break;
 			}
 
+#if SN
+			protected override TechData GetBlueprintRecipe()
+			{
+				return new TechData
+				{
+					craftAmount = 1,
+					Ingredients = Mod.config.EasyBuild
+						? new List<Ingredient>
+						{
+												new Ingredient(TechType.Titanium, 2)
+						}
+						: new List<Ingredient>
+						{
+												new Ingredient(TechType.Titanium, 2),
+												new Ingredient(TechType.ComputerChip, 1),
+												new Ingredient(TechType.AluminumOxide, 2)
+						}
+				};
+			}
+			protected override Atlas.Sprite GetItemSprite()
+			{
+				return SMLHelper.V2.Utility.ImageUtils.LoadSpriteFromFile(Mod.GetAssetPath("AutosortLocker.png"));
+			}
+#elif BZ
 			protected override RecipeData GetBlueprintRecipe()
 			{
 				return new RecipeData()
@@ -429,6 +451,7 @@ namespace AutosortLockers
 			{
 				return SMLHelper.V2.Utility.ImageUtils.LoadSpriteFromFile(Mod.GetAssetPath("AutosortLocker.png"));
 			}
+#endif
 		}
 
 		/*_____________________________________________________________________________________________________*/

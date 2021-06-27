@@ -14,7 +14,12 @@ namespace AutosortLockers
 		{
 			base.Initialize();
 
+#if SN
+var imageSprite = ImageUtils.LoadSprite(Mod.GetAssetPath("Circle.png"), new Vector2(0.5f, 0.5f));
+			var sprite = new Atlas.Sprite(imageSprite);
+#elif BZ
 			var sprite = ImageUtils.LoadSprite(Mod.GetAssetPath("Circle.png"), new Vector2(0.5f, 0.5f));
+#endif
 			for (int i = 0; i < buttons.Count; ++i)
 			{
 				var button = buttons[i];

@@ -4,14 +4,14 @@ using System.Linq;
 using Common.Mod;
 using Common.Utility;
 using SMLHelper.V2.Assets;
-using SMLHelper.V2.Crafting;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.EventSystems;
 using UWE;
-#if SUBNAUTICA
-using RecipeData = SMLHelper.V2.Crafting.RecipeData;
-#elif BELOWZERO
+using SMLHelper.V2.Crafting;
+
+#if SN
+//using RecipeData = SMLHelper.V2.Crafting.RecipeData;
+#elif BZ
 using TMPro;
 #endif
 
@@ -30,7 +30,7 @@ namespace AutosortLockers
 		private Coroutine plusCoroutine;
 		private SaveDataEntry saveData;
 
-#if SUBNAUTICA
+#if SN
 		[SerializeField]
 		private Text textPrefab;
 		[SerializeField]
@@ -41,7 +41,7 @@ namespace AutosortLockers
 		private Text plus;
 		[SerializeField]
 		private Text quantityText;
-#elif BELOWZERO
+#elif BZ
 		[SerializeField]
 		private TextMeshProUGUI textPrefab;
 		[SerializeField]
@@ -123,7 +123,6 @@ namespace AutosortLockers
 					return true;
 				}
 			}
-
 			return false;
 		}
 
@@ -162,9 +161,9 @@ namespace AutosortLockers
 				if (currentFilters == null || currentFilters.Count == 0)
 				{
 					text.text = "[Any]";
-#if SUBNAUTICA
+#if SN
 					text.alignment = TextAnchor.MiddleCenter;
-#elif BELOWZERO
+#elif BZ
 					text.alignment = TextAlignmentOptions.Center;
 #endif
 				}
@@ -176,17 +175,17 @@ namespace AutosortLockers
 
 					if (currentFilters.Count == 1)
 					{
-#if SUBNAUTICA
+#if SN
 						text.alignment = TextAnchor.MiddleCenter;
-#elif BELOWZERO
+#elif BZ
 						text.alignment = TextAlignmentOptions.Center;
 #endif
 					}
 					else
 					{
-#if SUBNAUTICA
+#if SN
 						text.alignment = TextAnchor.MiddleLeft;
-#elif BELOWZERO
+#elif BZ
 						text.alignment = TextAlignmentOptions.Left;
 #endif
 					}
@@ -266,7 +265,6 @@ namespace AutosortLockers
 					return true;
 				}
 			}
-
 			return false;
 		}
 
@@ -279,7 +277,6 @@ namespace AutosortLockers
 					return true;
 				}
 			}
-
 			return false;
 		}
 
@@ -292,7 +289,6 @@ namespace AutosortLockers
 					return true;
 				}
 			}
-
 			return false;
 		}
 
@@ -331,7 +327,6 @@ namespace AutosortLockers
 			{
 				Mod.Save();
 			}
-
 			UpdateQuantityText();
 		}
 
@@ -433,7 +428,7 @@ namespace AutosortLockers
 
 		private IEnumerator FinalSetup()
 		{
-			IPrefabRequest request = PrefabDatabase.GetPrefabForFilenameAsync("Submarine/Build/SmallLocker.prefab");
+			IPrefabRequest request = PrefabDatabase.GetPrefabAsync("Submarine/Build/SmallLocker.prefab");
 			yield return request;
 			request.TryGetPrefab(out GameObject prefab);
 			lockerPrefab = prefab;
@@ -615,6 +610,30 @@ namespace AutosortLockers
 				yield break;
 			}
 
+#if SN // Small Locker
+			protected override TechData GetBlueprintRecipe()
+			{
+				return new TechData
+				{
+					craftAmount = 1,
+					Ingredients = Mod.config.EasyBuild
+					? new List<Ingredient>
+					{
+						new Ingredient(TechType.Titanium, 2)
+					}
+					: new List<Ingredient>
+					{
+						new Ingredient(TechType.Titanium, 2),
+						new Ingredient(TechType.Magnetite, 1)
+					}
+				};
+			}
+
+			protected override Atlas.Sprite GetItemSprite()
+			{
+				return SMLHelper.V2.Utility.ImageUtils.LoadSpriteFromFile(Mod.GetAssetPath("AutosortTarget.png"));
+			}
+#elif BZ
 			protected override RecipeData GetBlueprintRecipe()
 			{
 				return new RecipeData
@@ -637,6 +656,7 @@ namespace AutosortLockers
 			{
 				return SMLHelper.V2.Utility.ImageUtils.LoadSpriteFromFile(Mod.GetAssetPath("AutosortTarget.png"));
 			}
+#endif
 		}
 
 		internal class AutosortStandingTargetBuildable : Buildable
@@ -668,6 +688,32 @@ namespace AutosortLockers
 				yield break;
 			}
 
+#if SN // Standig Locker
+			protected override TechData GetBlueprintRecipe()
+			{
+				return new TechData
+				{
+					craftAmount = 1,
+					Ingredients = Mod.config.EasyBuild
+					? new List<Ingredient>
+					{
+						new Ingredient(TechType.Titanium, 2),
+						new Ingredient(TechType.Quartz, 1)
+					}
+					: new List<Ingredient>
+					{
+						new Ingredient(TechType.Titanium, 2),
+						new Ingredient(TechType.Quartz, 1),
+						new Ingredient(TechType.Magnetite, 1)
+					}
+				};
+			}
+
+			protected override Atlas.Sprite GetItemSprite()
+			{
+				return SMLHelper.V2.Utility.ImageUtils.LoadSpriteFromFile(Mod.GetAssetPath("AutosortTargetStanding.png"));
+			}
+#elif BZ
 			protected override RecipeData GetBlueprintRecipe()
 			{
 				return new RecipeData
@@ -692,6 +738,7 @@ namespace AutosortLockers
 			{
 				return SMLHelper.V2.Utility.ImageUtils.LoadSpriteFromFile(Mod.GetAssetPath("AutosortTargetStanding.png"));
 			}
+#endif
 		}
 
 		/*__________________________________________________________________________________________________________*/
@@ -725,9 +772,9 @@ namespace AutosortLockers
 			yield return task;
 			var smallLockerPrefab = GameObject.Instantiate(task.GetResult());
 
-#if SUBNAUTICA
+#if SN
 			autosortTarget.textPrefab = GameObject.Instantiate(smallLockerPrefab.GetComponentInChildren<Text>());
-#elif BELOWZERO
+#elif BZ
 			autosortTarget.textPrefab = GameObject.Instantiate(smallLockerPrefab.GetComponentInChildren<TextMeshProUGUI>());
 #endif
 			// Destroys the lable on the small locker

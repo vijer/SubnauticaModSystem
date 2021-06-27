@@ -2,7 +2,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.UI;
-#if BELOWZERO
+#if BZ
 using TMPro;
 #endif
 
@@ -172,10 +172,10 @@ namespace AutosortLockers
 
 		public static CustomizeScreen Create(Transform parent, SaveDataEntry data, GameObject lockerPrefab = null)
 		{
-#if SUBNAUTICA
+#if SN
 			lockerPrefab = Resources.Load<GameObject>("Submarine/Build/SmallLocker");
 			var textPrefab = Instantiate(lockerPrefab.GetComponentInChildren<Text>());
-#elif BELOWZERO
+#elif BZ
 			var textPrefab = Instantiate(lockerPrefab.GetComponentInChildren<TextMeshProUGUI>());
 #endif
 			textPrefab.fontSize = 12;
